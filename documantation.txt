@@ -1,0 +1,125 @@
+composer kiyanne php package manager ekak 
+
+https://getcomposer.org/
+uda site eke n composer download karaganna 
+
+https://getcomposer.org/Composer-Setup.exe
+download link for exe
+
+https://www.geeksforgeeks.org/how-to-install-php-composer-on-windows/
+me tyenne tutorial eka
+
+[ composer install karanna kalin php install karala inna oni ]
+
+
+composer create-project --prefer-dist laravel/laravel php-laravel-project-crud
+walin aluth ekak haduwa 
+
+
+install karaddi 
+Your requirements could not be resolved to an installable set of packages.
+
+  Problem 1
+    - laravel/framework[v9.19.0, ..., 9.x-dev] require league/flysystem ^3.0.16 -> satisfiable by league/flysystem[3.0.16, ..., 3.x-dev].
+    - league/flysystem[3.0.16, ..., 3.x-dev] require league/mime-type-detection ^1.0.0 -> satisfiable by league/mime-type-detection[1.0.0, ..., 1.11.0].
+    - league/mime-type-detection[1.0.0, ...,
+
+
+kiyala error ekak awoth 
+
+
+
+mekata wisaduma 
+https://stackoverflow.com/questions/52734707/your-requirements-could-not-be-resolved-to-an-installable-set-of-packages-for-la
+eke tyewna 
+mulma answer eke
+
+but mehemai 
+meyala kiyanne wamppp / zampp walata . but mage php installation ekak ne tyenne . so mama e php older eke php.ini file eka thama change kale 
+
+
+extension=fileinfo
+kiyaha eka issaraha thibba semicolan eka ayin kalaa
+
+[Just uncomment extension=fileinfo in php.ini it worked for me even without xampp]
+
+
+
+php artisan serve
+uda command eka gahuwata passe project eka erve wenwa 
+
+
+
+https://www.section.io/engineering-education/laravel-beginners-guide-blogpost/
+uda blog eka balaana karanne meeka 
+
+
+ php artisan migrate
+gahuwama 
+framework\src\Illuminate\Database\Connectors\Connector.php:70  
+      PDOException::("could not find driver")
+
+kiyala aawoth 
+
+ekata hethuwa thama api xampp instal nokara kelinma php install karagena mee wAde karana nisaa database ekak php ini eke nAthiwiima 
+
+eeka configure karanna oni 
+
+php ini kiyana eke 
+;extension=pdo_mysql
+kiala tyena eke 
+; kiyana eka ayin karanna 
+
+
+
+php artisan make:factory BlogPostFactory –m BlogPost
+kiyala ekak tyenwa tutorial eke 
+eka gahwama 
+ Too many arguments to "make:factory" command, expected arguments "name".  
+kiyala awoth 
+php artisan make:factory BlogPostFactory  --model=BlogPost
+kiyala ganna . ethkota hari 
+[ refference :  https://stackoverflow.com/questions/70310252/why-is-php-artisan-makefactory-not-generating-with-a-model ]
+
+
+
+\App\Models\BlogPost::factory()->times(10)->create();
+meka gahana welawe pahala error eka awoth 
+PHP Error:  Class "Database\Factories\User" not found in E:\whatsapp parttime assignment projects\laravel_angular\laravel\php-laravel-project-crud\database\factories\BlogPostFactory.php on line 23
+meken karanne blog post tikak saha users la tika hadana eka nisa api manually eeka hadamu db eke 
+iwarane kathaawa
+
+
+
+View [layouts.app] not found.
+kiyala error ekak ei  welcome page eka haduwaama 
+hethuwa thama oyaa hariyata blog eka kiyawala naha Inside the resource/views folder create a new folder and name it layouts then create a file in the folder and name it app.blade.php.
+kiyala step ekak tyewn . eeka karanm hati
+
+
+-------------------
+
+deployment  -    https://www.youtube.com/watch?v=WN2hHvxMHTI
+
+mekedi sampurna roject ekama zip karala gannawa 
+ilagata sb ekath export karagannwa 
+
+
+
+
+
+--------------
+
+xampp , php kiyna extention eka ekka file access karanna pluwan api xampp , wampp wage eewa athule htdocs file eke devekop karana site walata . but laravel , wage siyalu framwork wlain develop karaddi , ehema naha . apoi route ekak define karanwa /page1 wage kiyala . eeka ta yaddi page1.html eka render karanna kiyala liyanwa . iilagata api yanne /page1 kiyana url ekata  , eeka thama kramaya 
+
+
+
+
+
+--------
+
+me app debug mode eken ayin karala production ekata daanna oni api hadala iwara unama . eekata podi variable tikak wenas karanna tyenne . ethakota thama optimized wenne 
+
+
+
+
